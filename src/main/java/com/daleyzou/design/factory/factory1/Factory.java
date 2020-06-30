@@ -1,4 +1,4 @@
-package com.daleyzou.design.factory;
+package com.daleyzou.design.factory.factory1;
 
 /**
  * Factory
@@ -9,8 +9,10 @@ package com.daleyzou.design.factory;
  */
 public class Factory {
     public static Product getProduct(String msg){
+        Product product = null;
         if ("ConcreteProduct".equalsIgnoreCase(msg)){
-            return new ConcreteProduct();
+            product = new ConcreteProduct();
         }
+        return product;
     }
 }

@@ -1,4 +1,4 @@
-package com.daleyzou.design.factory;
+package com.daleyzou.design.factory.factory1;
 
 /**
  * Product
