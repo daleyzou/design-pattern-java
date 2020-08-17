@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <config>
-    <className>com.daleyzou.design.builder.HeroBuilder</className>
+    <className>com.daleyzou.design.creation.builder.HeroBuilder</className>
 </config>
