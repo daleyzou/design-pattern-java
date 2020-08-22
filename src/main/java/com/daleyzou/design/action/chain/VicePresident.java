@@ -1,4 +1,4 @@
-package com.daleyzou.design.structure.chain;
+package com.daleyzou.design.action.chain;
 
 import com.google.gson.Gson;
 

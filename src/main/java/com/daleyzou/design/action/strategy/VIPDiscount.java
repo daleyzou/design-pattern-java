@@ -1,4 +1,4 @@
-package com.daleyzou.design.structure.strategy;
+package com.daleyzou.design.action.strategy;
 
 /**
  * VIPDiscount
