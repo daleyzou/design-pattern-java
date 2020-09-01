@@ -8,4 +8,7 @@ package com.daleyzou.design.structure.adapter;
  * @version 1.2.0
  */
 public class BinarySearch {
+    private int binarySearch(int[] array, int key) {
+        return 0;
+    }
 }
