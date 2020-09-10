@@ -1,4 +1,4 @@
-package com.daleyzou.design.structure.decorator;
+package com.daleyzou.design.structure.decorator.demo1;
 
 /**
  * ComponentDecorator
