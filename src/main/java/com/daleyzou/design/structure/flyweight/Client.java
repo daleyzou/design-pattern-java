@@ -22,10 +22,10 @@ public class Client {
         white2 = chessmanFactory.getChessman("white");
         System.out.println("white is equal?" + (white1 == white2));
 
-        black1.display();
-        black2.display();
-        black3.display();
-        white1.display();
-        white2.display();
+        black1.display(new Coordinates(1,2));
+        black2.display(new Coordinates(2,2));
+        black3.display(new Coordinates(3,2));
+        white1.display(new Coordinates(4,2));
+        white2.display(new Coordinates(5,2));
     }
 }

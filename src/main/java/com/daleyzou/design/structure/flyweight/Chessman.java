@@ -10,7 +10,9 @@ package com.daleyzou.design.structure.flyweight;
 public abstract class Chessman {
     public abstract String getColor();
 
-    public void display() {
-        System.out.println("chess is the color: " + this.getColor());
+    public void display(Coordinates coordinates) {
+        System.out.println(
+                "chess is the color: " + this.getColor() + ", the chess location: (" + coordinates.getX() + ", " + coordinates.getY()
+                        + ")");
     }
 }
