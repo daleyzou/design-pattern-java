@@ -1,4 +1,4 @@
-package com.daleyzou.design.structure.proxy;
+package com.daleyzou.design.structure.proxy.demo1;
 
 /**
  * subject

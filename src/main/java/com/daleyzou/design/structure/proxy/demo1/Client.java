@@ -1,4 +1,4 @@
-package com.daleyzou.design.structure.proxy;
+package com.daleyzou.design.structure.proxy.demo1;
 
 /**
  * Client
@@ -8,8 +8,5 @@ package com.daleyzou.design.structure.proxy;
  * @version 1.0.0
  */
 public class Client {
-    @Override
-    public void request() {
 
-    }
 }
