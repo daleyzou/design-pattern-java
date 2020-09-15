@@ -17,6 +17,7 @@ public class ProxySearcher implements Searcher {
     @Override
     public void doSearch(String userId, String keyword) {
 
+
     }
 
     public boolean validate(String userId) {
