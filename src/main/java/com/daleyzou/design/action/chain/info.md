@@ -4,4 +4,5 @@ Sunny软件公司承接了某企业SCM(Supply Chain Management，供应链管理
 副董事长可以审批5万元至10万元（不包括10万元）的采购单，董事长可以审批10万元至50万元（不包括50万元）的采购单，
 50万元及以上的采购单就需要开董事会讨论决定
 
-https://blog.csdn.net/lovelion/article/details/7420898
+
+参考链接：https://blog.csdn.net/lovelion/article/details/7420898
