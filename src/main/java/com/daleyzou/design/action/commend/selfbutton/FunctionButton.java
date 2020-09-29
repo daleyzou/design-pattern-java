@@ -16,6 +16,7 @@ public class FunctionButton {
     }
 
     public void onClick() {
+        System.out.println("点击功能键：");
         command.execute();
     }
 

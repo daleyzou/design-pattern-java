@@ -8,8 +8,14 @@ package com.daleyzou.design.action.commend.selfbutton;
  * @version 1.0.0
  */
 public class MinimizeCommand extends Command {
+    WindowHandler windowHandler;
+
+    public MinimizeCommand() {
+        this.windowHandler = new WindowHandler();
+    }
+
     @Override
     public void execute() {
-
+        windowHandler.minimize();
     }
 }

@@ -11,7 +11,7 @@ import java.util.ArrayList;
  */
 public class SettingWindow {
     String title;
-    ArrayList<FunctionButton> functionButtons;
+    ArrayList<FunctionButton> functionButtons = new ArrayList<>();
 
     public SettingWindow(String title) {
         this.title = title;
@@ -25,12 +25,17 @@ public class SettingWindow {
         this.title = title;
     }
     public void addFunctionButton(FunctionButton functionButton){
-
+        functionButtons.add(functionButton);
     }
     public void removeFunctionButton(FunctionButton functionButton){
-
+        functionButtons.remove(functionButton);
     }
     public void display(){
-
+        System.out.println("显示窗口：" + this.title);
+        System.out.println("显示功能键：");
+        for (FunctionButton functionButton : functionButtons) {
+            System.out.println(functionButton.getName());
+        }
+        System.out.println("------------------------------");
     }
 }

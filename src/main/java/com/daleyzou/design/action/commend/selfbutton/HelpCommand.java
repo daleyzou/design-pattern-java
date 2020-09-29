@@ -8,8 +8,14 @@ package com.daleyzou.design.action.commend.selfbutton;
  * @version 1.0.0
  */
 public class HelpCommand extends Command {
+    HelpHandler helpHandler;
+
+    public HelpCommand() {
+        this.helpHandler = new HelpHandler();
+    }
+
     @Override
     public void execute() {
-
+        helpHandler.display();
     }
 }
