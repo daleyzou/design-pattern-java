@@ -8,13 +8,16 @@ package com.daleyzou.design.action.commend.calculator;
  * @version 1.0.0
  */
 public class AddCommand extends AbstractCommand {
+    private Adder adder = new Adder();
+    private int value;
     @Override
     public int execute(int value) {
-        return 0;
+        this.value = value;
+        return this.adder.add(value);
     }
 
     @Override
     public int undo() {
-        return 0;
+        return this.adder.add(-this.value);
     }
 }
