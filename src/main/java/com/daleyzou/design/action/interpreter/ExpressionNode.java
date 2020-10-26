@@ -22,6 +22,7 @@ public class ExpressionNode extends Node {
                 context.skipToken("END");
                 break;
             }else {
+                System.out.println("=======" + context.getCurrentToken());
                 CommandNode commandNode = new CommandNode();
                 commandNode.interpret(context);
                 list.add(commandNode);
