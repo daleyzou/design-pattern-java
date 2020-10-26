@@ -13,17 +13,20 @@ public class Client {
     public static void main(String[] args) throws IOException {
         ConfigSettingWindow configSettingWindow = new ConfigSettingWindow();
         ConfigOperator configOperator = new ConfigOperator();
-        Command command1 = new InsertCommand("insert1");
-        Command command2 = new InsertCommand("insert2");
-        Command command3 = new ModifyCommand("modify 1");
+        Command command1 = new InsertCommand("insert");
+        Command command2 = new InsertCommand("insert");
+        Command command3 = new ModifyCommand("modify");
 
         command1.setConfigOperator(configOperator);
         command2.setConfigOperator(configOperator);
         command3.setConfigOperator(configOperator);
 
-        configSettingWindow.call(command1);
-        configSettingWindow.call(command2);
-        configSettingWindow.call(command3);
+        configSettingWindow.setCommand(command1);
+        configSettingWindow.call("网站首页");
+        configSettingWindow.setCommand(command2);
+        configSettingWindow.call("网站菜单");
+        configSettingWindow.setCommand(command3);
+        configSettingWindow.call("网站首页");
 
         configSettingWindow.save();
     }

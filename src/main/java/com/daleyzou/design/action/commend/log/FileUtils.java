@@ -12,14 +12,14 @@ import java.util.List;
  */
 public class FileUtils {
     public static void writeCommand(List<Command> commands) throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream("config.log");
+        FileOutputStream fileOutputStream = new FileOutputStream("config.txt");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(new BufferedOutputStream(fileOutputStream));
         objectOutputStream.writeObject(commands);
         objectOutputStream.close();
     }
 
     public static List<Command> readCommand() throws IOException, ClassNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream("config.log");
+        FileInputStream fileInputStream = new FileInputStream("config.txt");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         List<Command> commands = (List<Command>) objectInputStream.readObject();
         objectInputStream.close();

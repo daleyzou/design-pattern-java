@@ -15,7 +15,7 @@ public class InsertCommand extends Command {
     @Override
     public void execute(String args) {
         this.args = args;
-        configOperator.insert();
+        configOperator.insert(args);
     }
 
     @Override

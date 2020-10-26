@@ -15,7 +15,7 @@ public class ModifyCommand extends Command {
     @Override
     public void execute(String args) {
         this.args = args;
-        configOperator.modify();
+        configOperator.modify(args);
     }
 
     @Override

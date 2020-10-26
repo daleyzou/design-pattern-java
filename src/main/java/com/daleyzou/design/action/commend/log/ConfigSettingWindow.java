@@ -13,9 +13,14 @@ import java.util.List;
  */
 public class ConfigSettingWindow {
     List<Command> commandList = new ArrayList<>();
+    Command command;
 
-    public void call(Command command){
-        command.execute("args1");
+    public void setCommand(Command command) {
+        this.command = command;
+    }
+
+    public void call(String args){
+        command.execute(args);
         commandList.add(command);
     }
 

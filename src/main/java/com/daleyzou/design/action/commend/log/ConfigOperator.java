@@ -10,11 +10,11 @@ import java.io.Serializable;
  * @version 1.0.0
  */
 public class ConfigOperator implements Serializable {
-    public void insert(){
-        System.out.println("write a log");
+    public void insert(String args) {
+        System.out.println("add a node : " + args);
     }
 
-    public void modify(){
-        System.out.println("modify a log");
+    public void modify(String args) {
+        System.out.println("modify a node" + args);
     }
 }
