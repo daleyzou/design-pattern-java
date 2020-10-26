@@ -21,7 +21,7 @@ public class Context {
         nextToken();
     }
 
-    private String nextToken() {
+    public String nextToken() {
         if (stringTokenizer.hasMoreTokens()){
             currentToken = stringTokenizer.nextToken();
         }else {
