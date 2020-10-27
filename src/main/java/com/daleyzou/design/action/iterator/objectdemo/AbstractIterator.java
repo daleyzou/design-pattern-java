@@ -7,5 +7,17 @@ package com.daleyzou.design.action.iterator.objectdemo;
  * @date 2020年10月27日 9:53
  * @version 1.0.0
  */
-public class AbstractIterator {
+public interface AbstractIterator {
+    void next();
+
+    boolean isLast();
+
+    void previous();
+
+    boolean isFirst();
+
+    Object getNextItem();
+
+    Object getPreviousItem();
+
 }
