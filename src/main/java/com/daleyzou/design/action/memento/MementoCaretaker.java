@@ -8,4 +8,13 @@ package com.daleyzou.design.action.memento;
  * @version 1.0.0
  */
 public class MementoCaretaker {
+    private ChessmanMemento chessmanMemento;
+
+    public ChessmanMemento getChessmanMemento() {
+        return chessmanMemento;
+    }
+
+    public void setChessmanMemento(ChessmanMemento chessmanMemento) {
+        this.chessmanMemento = chessmanMemento;
+    }
 }
