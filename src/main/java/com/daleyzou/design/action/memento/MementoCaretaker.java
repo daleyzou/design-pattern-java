@@ -1,5 +1,8 @@
 package com.daleyzou.design.action.memento;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * MementoCaretaker
  * @description TODO
@@ -8,13 +11,13 @@ package com.daleyzou.design.action.memento;
  * @version 1.0.0
  */
 public class MementoCaretaker {
-    private ChessmanMemento chessmanMemento;
+    private List<ChessmanMemento> chessmanMementoList = new ArrayList<>();
 
-    public ChessmanMemento getChessmanMemento() {
-        return chessmanMemento;
+    public ChessmanMemento getChessmanMemento(int index) {
+        return chessmanMementoList.get(index);
     }
 
     public void setChessmanMemento(ChessmanMemento chessmanMemento) {
-        this.chessmanMemento = chessmanMemento;
+        this.chessmanMementoList.add(chessmanMemento);
     }
 }
