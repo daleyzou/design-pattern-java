@@ -8,4 +8,5 @@ package com.daleyzou.design.action.mediator;
  * @version 1.0.0
  */
 public abstract class Mediator {
+    abstract void componentChanged(Component component);
 }

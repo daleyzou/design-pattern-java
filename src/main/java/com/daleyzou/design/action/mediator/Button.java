@@ -8,4 +8,8 @@ package com.daleyzou.design.action.mediator;
  * @version 1.0.0
  */
 public class Button extends Component {
+    @Override
+    public void update() {
+
+    }
 }
