@@ -9,7 +9,7 @@ package com.daleyzou.design.action.mediator;
  */
 public class Client {
     public static void main(String[] args) {
-        Mediator mediator = new ConcreteMediator();
+        ConcreteMediator mediator = new ConcreteMediator();
 
         Button addButton = new Button();
         List showList = new List();
@@ -21,6 +21,13 @@ public class Client {
         combox.setMediator(mediator);
         userNameTextBox.setMediator(mediator);
 
+        mediator.setButton(addButton);
+        mediator.setCombox(combox);
+        mediator.setList(showList);
+        mediator.setTextBox(userNameTextBox);
 
+        addButton.changed();
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        showList.changed();
     }
 }
