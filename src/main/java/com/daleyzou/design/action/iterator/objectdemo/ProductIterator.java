@@ -16,6 +16,9 @@ public class ProductIterator implements AbstractIterator {
     private int cursor1 = 0;
     private int cursor2 = 0;
 
+    /**
+     * 这里需要传递访问的聚合数据到迭代器，如果在访问对象中直接使用内部类的方式，就不需要再传递一次数据了
+     * */
     public ProductIterator(ProductList productList) {
         this.productList = productList;
         this.products = productList.getObjects();
