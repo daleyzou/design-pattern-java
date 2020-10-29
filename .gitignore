@@ -29,3 +29,7 @@ build/
 
 ### VS Code ###
 .vscode/
+config.txt
+lib/javax.ejb.jar
+lib/javax.jms.jar
+*.jar
