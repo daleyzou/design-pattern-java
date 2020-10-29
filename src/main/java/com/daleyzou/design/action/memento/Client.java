@@ -12,7 +12,7 @@ public class Client {
 
     public static int index = -1;
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         Chessman chess = new Chessman("车", 1, 1);
         play(chess);
