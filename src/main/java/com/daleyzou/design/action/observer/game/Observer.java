@@ -8,4 +8,8 @@ package com.daleyzou.design.action.observer.game;
  * @version 1.0.0
  */
 public interface Observer {
+    String getName();
+    void setName(String name);
+    void help();
+    void beAttacked(AllyControlCenter allyControlCenter);
 }
