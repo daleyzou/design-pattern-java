@@ -23,10 +23,12 @@ public abstract class AllyControlCenter {
     }
 
     protected void join(Observer player) {
+        System.out.println(player.getName() + "  加入战队");
         players.add(player);
     }
 
     protected  void quit(Observer player) {
+        System.out.println(player.getName() + "退出战队");
         players.remove(player);
     }
 
