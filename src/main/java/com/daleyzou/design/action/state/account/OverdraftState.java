@@ -8,6 +8,10 @@ package com.daleyzou.design.action.state.account;
  * @version 1.0.0
  */
 public class OverdraftState extends AccountStatue {
+    public OverdraftState(AccountStatue accountStatue) {
+        this.account = accountStatue.account;
+    }
+
     @Override
     public void withdraw(double amount) {
         super.withdraw(amount);
@@ -28,11 +32,11 @@ public class OverdraftState extends AccountStatue {
     @Override
     void stateCheck() {
         if (this.account.getBalance() >= 0){
-            this.account.setAccountStatue(new NormalState());
+            this.account.setAccountStatue(new NormalState(this));
         }else if (this.account.getBalance() < 0 &&this.account.getBalance() > -2000){
-            this.account.setAccountStatue(new OverdraftState());
+            this.account.setAccountStatue(new OverdraftState(this));
         }else if (this.account.getBalance() <= -2000){
-            this.account.setAccountStatue(new RestrictedState());
+            this.account.setAccountStatue(new RestrictedState(this));
         }
     }
 }
