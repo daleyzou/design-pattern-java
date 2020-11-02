@@ -13,7 +13,7 @@ public abstract class AccountStatue {
         this.account.setBalance(account.getBalance() +amount);
     }
     public void withdraw(double amount){
-        this.account.setBalance(account.getBalance() - amount);
+
     }
     abstract void coumputeInterest();
     abstract void stateCheck();

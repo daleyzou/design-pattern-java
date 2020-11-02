@@ -17,6 +17,8 @@ public class Account {
     public Account(String owner, double init) {
         this.owner = owner;
         this.balance = init;
+        accountStatue = new NormalState(this);
+        System.out.println(this.owner + "进行了开户， 当前账户余额：" + this.balance);
     }
 
     public void setBalance(double balance) {
@@ -33,10 +35,12 @@ public class Account {
 
     public void deposit(double amount) {
         this.accountStatue.deposit(amount);
+        System.out.println(this.owner + "进行了存款， 当前账户余额：" + this.balance);
     }
 
     public void withdraw(double amount) {
         this.accountStatue.withdraw(amount);
+        System.out.println(this.owner + "进行了取款， 当前账户余额：" + this.balance);
     }
 
     public void computeInterest(){

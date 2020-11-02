@@ -34,8 +34,8 @@ public class RestrictedState extends AccountStatue {
             this.account.setAccountStatue(new NormalState(this));
         }else if (this.account.getBalance() < 0 &&this.account.getBalance() > -2000){
             this.account.setAccountStatue(new OverdraftState(this));
-        }else if (this.account.getBalance() <= -2000){
-            this.account.setAccountStatue(new RestrictedState(this));
+        }else if (this.account.getBalance() < -2000){
+            System.out.println("操作受限");
         }
     }
 }

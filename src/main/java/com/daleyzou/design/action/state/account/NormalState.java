@@ -11,6 +11,9 @@ public class NormalState extends AccountStatue {
     public NormalState(AccountStatue accountStatue) {
         this.account = accountStatue.account;
     }
+    public NormalState(Account account){
+        this.account = account;
+    }
 
     @Override
     public void deposit(double amount) {
@@ -20,7 +23,7 @@ public class NormalState extends AccountStatue {
 
     @Override
     public void withdraw(double amount) {
-        super.withdraw(amount);
+        this.account.setBalance(account.getBalance() - amount);
         stateCheck();
     }
 
@@ -31,12 +34,12 @@ public class NormalState extends AccountStatue {
 
     @Override
     void stateCheck() {
-        if (this.account.getBalance() >= 0){
-            this.account.setAccountStatue(new NormalState(this));
-        }else if (this.account.getBalance() < 0 &&this.account.getBalance() > -2000){
+        if (this.account.getBalance() < 0 &&this.account.getBalance() > -2000){
             this.account.setAccountStatue(new OverdraftState(this));
-        }else if (this.account.getBalance() <= -2000){
+        }else if (this.account.getBalance() == -2000){
             this.account.setAccountStatue(new RestrictedState(this));
+        }else if (this.account.getBalance() < -2000){
+            System.out.println("操作受限");
         }
     }
 }
