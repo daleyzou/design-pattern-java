@@ -10,11 +10,12 @@ package com.daleyzou.design.action.state.share;
 public class OffState extends State {
     @Override
     void on(Switch s) {
-
+        System.out.println("已经打开");
     }
 
     @Override
     void off(Switch s) {
-
+        System.out.println("关闭");
+        Switch.setState(Switch.getState("off"));
     }
 }
