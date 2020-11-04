@@ -20,7 +20,7 @@ public class Switch {
         state = onState;
     }
 
-    public static void setState(State state) {
+    public void setState(State state) {
         Switch.state = state;
     }
 
@@ -33,11 +33,11 @@ public class Switch {
     }
 
     public void on(){
-        System.out.println("打开" + this.name);
+        state.on(this);
     }
 
     public void off(){
-        System.out.println("关闭" + this.name);
+        state.off(this);
     }
 
 }

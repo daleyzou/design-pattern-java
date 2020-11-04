@@ -12,6 +12,13 @@ public class Client {
         Switch switchOne = new Switch("开关1");
         Switch switchTwo = new Switch("开关2");
 
+        switchOne.on();
+        switchTwo.on();
 
+        switchOne.off();
+        switchTwo.off();
+
+        switchOne.on();
+        switchTwo.on();
     }
 }

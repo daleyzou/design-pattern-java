@@ -16,6 +16,6 @@ public class OffState extends State {
     @Override
     void off(Switch s) {
         System.out.println("关闭");
-        Switch.setState(Switch.getState("off"));
+        s.setState(Switch.getState("off"));
     }
 }
