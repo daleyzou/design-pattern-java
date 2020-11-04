@@ -33,10 +33,12 @@ public class Switch {
     }
 
     public void on(){
+        System.out.printf(this.name);
         state.on(this);
     }
 
     public void off(){
+        System.out.printf(this.name);
         state.off(this);
     }
 
