@@ -8,4 +8,6 @@ package com.daleyzou.design.action.visitor;
  * @version 1.0.0
  */
 public  abstract class Department {
+    public abstract void visit(FulltimeEmployee fulltimeEmployee);
+    public abstract void visit(ParttimeEmployee parttimeEmployee);
 }

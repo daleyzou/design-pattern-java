@@ -8,4 +8,5 @@ package com.daleyzou.design.action.visitor;
  * @version 1.0.0
  */
 public interface Employee {
+    public void accept(Department handle);
 }

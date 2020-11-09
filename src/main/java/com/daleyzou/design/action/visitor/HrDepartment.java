@@ -8,4 +8,13 @@ package com.daleyzou.design.action.visitor;
  * @version 1.0.0
  */
 public class HrDepartment extends Department {
+    @Override
+    public void visit(FulltimeEmployee fulltimeEmployee) {
+
+    }
+
+    @Override
+    public void visit(ParttimeEmployee parttimeEmployee) {
+
+    }
 }
