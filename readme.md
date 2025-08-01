@@ -7,3 +7,6 @@ https://github.com/quanke/design-pattern-java
 https://gof.quanke.name/   (仓库地址：https://github.com/quanke/design-pattern-java) <br>
 
 对应目录：https://blog.csdn.net/LoveLion/article/details/17517213
+
+
+补充链接：https://refactoringguru.cn/design-patterns/java
